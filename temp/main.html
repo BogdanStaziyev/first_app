@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+{{ template "header" }}
+
+    <main class="px-3">
+        <h1>Введите координаты точек</h1>
+        <main class="px-3">
+            <form action="/result" method="post">
+                <p>
+                    X
+                    <sub>1</sub>
+                    =
+                    <input type="number" name="X1"
+
+
+
+
+
+                           id="X1" max="7000000" min="-7000000" step="0.001" required="" ><br>
+                </p>
+                <p>
+                    Y
+                    <sub>1</sub>
+                    =
+                    <input type="number" name="Y1" id="Y1" max="7000000" min="-7000000" step="0.001" required="" ><br>
+                </p>
+                <p>
+                    X
+                    <sub>2</sub>
+                    =
+                    <input type="number" name="X2" id="X2" max="7000000" min="-7000000" step="0.001" required="" ><br>
+                </p>
+                <p>
+                    Y
+                    <sub>2</sub>
+                    =
+                    <input type="number" name="Y2" id="Y2" max="7000000" min="-7000000" step="0.001" required=""  ><br>
+                </p>
+                {{/*                <input type="number" name="Y2" id="Y2" class="form-control" placeholder="Введите значение Y2 (целое число или число c плавающей точкой"></textarea><br>*/}}
+                <button class="btn btn-warning">Добавить</button>
+            </form>
+        </p>
+    </main>
+
+        {{ template "footer" }}
+
+{{ end }}
